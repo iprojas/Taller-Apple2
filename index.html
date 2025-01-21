@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Seminario 65</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div id="date"></div>
+<div class="toprow">
+  <div class="nowplaying">
+    <h3>Reproductor</h3>
+    <div><button id="play"><span></span></button></div>
+    <div>
+      <div>
+        <h4 id="artist">Nombre Artista</h4>
+        <h4 id="song">Sala</h4>
+      </div>
+    </div>
+    <div><button id="prev" onclick="playPrev();">‹ Prev</button><button id="next" onclick="playNext();">Sig ›</button></div>
+  </div>
+  <div class="analyzer">
+    <h3>Visualizador</h3>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="window">
+  <div class="dragarea"></div>
+  <h3>Seminario 65</h3>
+  <div class="frame">
+    <div class="imgwrap">
+      <img class="active" src='img1.jpg'>
+      <img src="img1.jpg">
+      <img src="https://f4.bcbits.com/img/a2689309068_16.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg">
+      <img src="img1.jpg"></div>
+    <div>
+      <ul>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+        <li><a href="https://raw.githubusercontent.com/adamjkuhn/audiofiles/master/dummy.mp3">Nombre Artista - <span>Acá va el nombre de la obra</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<svg image-rendering='optimizeSpeed'>
+  <filter color-interpolation-filters='sRGB' height='100%' id='dither' width='100%' x='0' y='0'>
+    <feimage height='4' width='4' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+UlEQVR42gXBERTCUABA0X/OYDAYDAZBEAyCIBgMgiAIgiAYBINgEAwGgyAIBsFgMAiCIAiCIAgGQTAYDAaDIAiCwWDwulcIIXg8HgwGA36/H4qi8Hq9sCyLtm0Rm82G0WjE5XJhvV4ThiHT6ZT7/U4QBIhut0tVVaiqSpZl9Pt9vt8vnU6HsiwRh8OB5XLJfr9nNptxPp9xXZckSbBtGyHLMs/nE9M0aZoGSZJI05ThcEhd14jdbsdkMuF2u+H7PtvtlvF4zPV6xfM8hGEYfD4fdF2nKAp6vR7v9xtN08jzHHE6nVitVsRxzGKx4Hg84jgOURQxn8/5A7oKnYRU4EpfAAAAAElFTkSuQmCC'></feimage>
+    <fetile></fetile>
+    <fecomposite in='SourceGraphic' k1='0' k2='1' k3='1' k4='-0.4' operator='arithmetic'></fecomposite>
+    <fecomponenttransfer>
+      <fefuncr tablevalues='0 1' type='discrete'></fefuncr>
+      <fefuncg tablevalues='0 1' type='discrete'></fefuncg>
+      <fefuncb tablevalues='0 1' type='discrete'></fefuncb>
+    </fecomponenttransfer>
+  </filter>
+</svg>
+<div id="icon"><img src="https://assets.codepen.io/383755/Mac.svg" alt="" /></div>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script>
+<script src='https://assets.codepen.io/16327/Flip.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
